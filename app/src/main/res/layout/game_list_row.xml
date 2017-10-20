@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#00FFFFFF"
+    android:weightSum="2"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/stickerThumbnail"
+       android:layout_width="90dp"
+       android:layout_height="90dp"
+       android:scaleType="fitXY"
+       android:layout_alignParentLeft="true"
+       android:background="#00FFFFFF"
+        android:layout_weight="0.5"
+        android:layout_marginRight="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/game_sticker_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="#00FFFFFF"
+            android:layout_alignParentRight="true" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btndownlod_pressed"
+            android:background="#00000000"
+            android:id="@+id/gameDownloadButton"
+            android:layout_gravity="bottom|right"
+           />
+    </FrameLayout>
+
+
+</LinearLayout>

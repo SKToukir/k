@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoRelated.HDCategoryActivity">
+
+    <include
+        android:id="@+id/tool_bar_hd_cat"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar_hd_cat"
+        android:layout_marginTop="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Bangla Top-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/banglaMusicVideoSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="225dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:id="@+id/banglaMusicVideoHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="বাংলা মিউজিক ভিডিও"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/banglaMusicVideoMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_banglaMusicVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_banglaMusicVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"
+                    android:layout_marginTop="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Bangla Top-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/banglaNatokSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:id="@+id/banglaNatokHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="বাংলা নাটক"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/banglaNatokMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_banglaNatok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_banglaNatok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"
+                    android:layout_marginTop="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Bangla Top-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/banglaTelefilmSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:id="@+id/banglaTelefilmHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="বাংলা টেলিফিল্ম"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/banglaTelefilmMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_banglaTelefilm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_banglaTelefilm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"
+                    android:layout_marginTop="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/footerSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a7a3a3">
+
+                <TextView
+                    android:id="@+id/footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="আরো এপ্স"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/buddyVdohd"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/buddy" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/bdtubeVdohd"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bdtube_bl" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/banglabeatsVdohd"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/banglabeats" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/amrStckrVdohd"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/aamr" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ratemeVdohd"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/rateme" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/base_color"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btnHomeVdohd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="true"
+                        android:src="@drawable/home" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btnHelpSameVdohd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="true"
+                        android:src="@drawable/help" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btnHelpVdohd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="true"
+                        android:src="@drawable/about" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btnDownloadHistoryPageVdohd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="true"
+                        android:src="@drawable/account" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="ClubZ © 2017.All Rights Reserved."
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

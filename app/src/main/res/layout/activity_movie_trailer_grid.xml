@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_full_video_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ededed"
+    tools:context="com.vumobile.clubzed.VideoRelated.MovieTrailerGridActivity">
+
+    <include
+        android:id="@+id/tool_bar_movietrailer"
+        layout="@layout/tool_bar"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/movietrailerGridSection"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/base_color">
+
+        <LinearLayout
+            android:gravity="center|left"
+            android:background="@drawable/backheader"
+            android:layout_width="150dp"
+            android:layout_height="28dp">
+
+            <TextView
+                android:id="@+id/movietrailerHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মুভি ট্রেইলার"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gridViewmovietrailer"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:gravity="fill"
+        ptr:ptrMode="both"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <android.support.v7.widget.CardView
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentRight="true"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp">
+            <Button
+                android:onClick="btnNextmovietrailerGrid"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="More >>"
+                android:background="@color/base_color"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>
+

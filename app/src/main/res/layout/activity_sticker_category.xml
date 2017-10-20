@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Picture_Sticker_Related.StickerCategoryActivity">
+
+    <include
+        android:id="@+id/tool_bar_sticker_cats"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tool_bar_sticker_cats">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Animated Sticker-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/fullVdoSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:id="@+id/fullVdoHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="অ্যানিমেশন"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/animatedStickerMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_animatedSticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_animatedSticker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!--Bangla-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="বাংলা"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/stickerBanglaMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_stickerBangla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_stickerBangla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!--Sticker Cricket bisso-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="ক্রিকেট"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/cricBissoMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_cricBisso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_cricBisso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Eid sticker-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="ঈদ "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/eidStickerMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_eidSticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_eidSticker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Sticker Events-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="ইভেন্টস"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/eventMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_eventEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Sticker funny-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="ফানি"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/funnyMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_funny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_funny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Sticker Islamic-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="ইসলামিক"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/islamicMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_islamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_islamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Sticker Love-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="লাভ"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/loveMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/footerSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a7a3a3">
+
+                <TextView
+                    android:id="@+id/footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="আরো এপ্স"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/buddySt"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/buddy" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/bdtubeSt"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bdtube_bl" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/banglabeatsSt"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/banglabeats" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/amarStSt"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/aamr" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ratemeSt"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/rateme" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/base_color"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/homeSt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/home" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/helpSt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/help" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/helpSameSt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/about" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/myDownloadsSt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/account" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="ClubZ © 2017.All Rights Reserved."
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

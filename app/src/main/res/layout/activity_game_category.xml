@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameRelated.GameCategoryActivity">
+
+    <include
+        android:id="@+id/tool_bar_game_cat"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar_game_cat"
+        android:layout_marginTop="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Action Game-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/gameActionSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="অ্যাকশন "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/actionGameMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_action_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_action_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Arcade Game-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="আর্কেড "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/gameArcadeMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_gameArcade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_game_arcade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Game Racing-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="রেসিং "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/gameRacingMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_game_racing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_game_racing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!--Game Sports-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="স্পোর্টস "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/gameSportsMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_eng_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_game_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Game puzzle-->
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backheader">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left|center"
+                            android:text="ব্রেন এন্ড পাজল"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/gamePuzzleMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_bangla_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_game_puzzle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <!--&lt;!&ndash;Movie trailer&ndash;&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:id="@+id/movieTrailerSection"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/base_color">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/movieTrailerHeader"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="Movie Trailer "-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/moviTrailerMore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="right"-->
+            <!--android:text="More..."-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18dp" />-->
+            <!--</RelativeLayout>-->
+            <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/linear_layout_movieTrailer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view_movieTrailer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="145dp">-->
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash;Movie Review&ndash;&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:id="@+id/movieRiviewSection"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/base_color">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/movieReviewHeader"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="Movie Review"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/movieReviewMore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="right"-->
+            <!--android:text="More..."-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18dp" />-->
+            <!--</RelativeLayout>-->
+            <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/linear_layout_movieReview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view_movieReview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="145dp">-->
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash;Celebrary News&ndash;&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:id="@+id/celebratyNewsSection"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/base_color">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/celebratyNewsHeader"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="Celebraty News"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/celebratyNewsMore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="right"-->
+            <!--android:text="More..."-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18dp" />-->
+            <!--</RelativeLayout>-->
+            <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/linear_layout_celebraty_news"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view_celebraty_news"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="145dp">-->
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash;Hollywood gossip&ndash;&gt;-->
+            <!--<RelativeLayout-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:id="@+id/hollywoodGossipSection"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/base_color">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/hollywoodGossipHeader"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="Hollywood Gossip"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/hollywoodGossipMore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="right"-->
+            <!--android:text="More..."-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18dp" />-->
+            <!--</RelativeLayout>-->
+            <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/linear_layout_hollywood_gossip"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view_hollywood_gossip"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="145dp">-->
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--</LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/footerSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a7a3a3">
+
+                <TextView
+                    android:id="@+id/footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="আরো এপ্স"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/buddyGame"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/buddy" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/bdtubeGame"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bdtube_bl" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/banglabeatsGame"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/banglabeats" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/amarStGame"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/aamr" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ratemeGame"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/rateme" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/base_color"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/homeGame"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/home" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/helpGame"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/help" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/helpSameGame"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/about" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/myDownloadsGame"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/account" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="ClubZ © 2017.All Rights Reserved."
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:background="#000000"
+        android:layout_below="@+id/picUpperLayout"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Picture of\n The Week"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/pic_pictureOfTheWeek"
+                    android:textColor="#ffffff"
+                    android:lines="2" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_picoftheweekImage"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Bangladeshi\n Celebrity"
+                    android:id="@+id/pic_b_celebrity"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_b_celebrity_imageview"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Bollywood\nCelebrity"
+                    android:id="@+id/pic_bolly_celebrity"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_bolly_celebrity_imageiview"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Cool"
+                    android:id="@+id/pic_cool"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_cool_imageview"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Hollywood\nCelebrity"
+                    android:id="@+id/pic_holly_celebrity"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_holly_celebrity_imageView"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Love"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/pic_love"
+                    android:singleLine="false"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_love_imageView"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Speacial\nEvents"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/pic_speacial_events"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_speacial_event_imageView"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sticker"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/pic_sticker"
+                    android:textColor="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:id="@+id/pic_sticker_imageView"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>

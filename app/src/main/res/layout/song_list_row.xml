@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/song_list_play_button"
+             />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/RelativeLayoutLeftButton"
+        android:id="@+id/relativeLayout"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tvContentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click Here Click Here Click Here"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/download"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvContentTitle"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/download_count"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imageView"
+            android:text="hello"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/songViewratingBar"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

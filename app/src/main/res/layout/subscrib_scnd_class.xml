@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alertstyle"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+        <ImageView
+            android:background="@drawable/subscribe_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/nishcitokoron"
+            android:id="@+id/btnOk_nishchit_korun"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

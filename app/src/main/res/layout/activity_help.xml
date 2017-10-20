@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/base_color"
+        android:id="@+id/helpBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Help"
+            android:id="@+id/textView"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/helpBar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/helpTextViewOne"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+            <TextView
+                android:autoLink="web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/portal"
+                android:id="@+id/helpTextPortal"
+                android:layout_below="@+id/scrollView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:id="@+id/helpTextThree"
+                android:layout_below="@+id/helpTextPortal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:autoLink="email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="support@vumobile.biz\n"
+                android:id="@+id/helpTextHelpLine"
+                android:layout_below="@+id/helpTextThree"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <!--Other Link-->
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/footerSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a7a3a3">
+
+                <TextView
+                    android:id="@+id/footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="OTHER LINKS"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/btnBuddyLinkHelp"
+                        android:clickable="true"
+                        android:src="@drawable/buddy"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnBdTubeLinkHelp"
+                        android:clickable="true"
+                        android:src="@drawable/bdtube_bl"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnBanglaBeatsLinkHelp"
+                        android:clickable="true"
+                        android:src="@drawable/banglabeats"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnAmarStickerLinkHelp"
+                        android:clickable="true"
+                        android:src="@drawable/aamr"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnRateMeLinkHelp"
+                        android:clickable="true"
+                        android:src="@drawable/rateme"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/base_color"
+                android:padding="15dp"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnHomeHelp"
+                        android:clickable="true"
+                        android:src="@drawable/home"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnHelpSameHelp"
+                        android:clickable="true"
+                        android:src="@drawable/help"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnHelpHelp"
+                        android:src="@drawable/about"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/btnMyDownloadsHelp"
+                        android:clickable="true"
+                        android:src="@drawable/account"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/base_color"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:background="#fff"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="15sp"
+                        android:textColor="#fff"
+                        android:text="ClubZ © 2017.All Rights Reserved."
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,547 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoRelated.VideoCategoryActivity">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/headerImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/tool_bar_full_vdo"
+                layout="@layout/tool_bar"/>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerImageLayout"
+            android:layout_marginTop="2dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/videoSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/videoeHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Videos"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/videoMores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_vdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <!--Drama Clips-->
+                <RelativeLayout
+                    android:id="@+id/dramaSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/dramaHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Drama Clips"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dramaMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear_layout_drama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_drama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <!--Full video Clips-->
+                <RelativeLayout
+                    android:id="@+id/fullVdoSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/fullVdoHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Full Video"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fullVdoMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear_layout_fullvdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_fullVdo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <!--Music-->
+                <RelativeLayout
+                    android:id="@+id/musicSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/musicHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Music"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/musicMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear_layout_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <!--Game-->
+                <RelativeLayout
+                    android:id="@+id/GameSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/gameHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Games"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gameMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear_layout_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <!---Picture-->
+                <RelativeLayout
+                    android:id="@+id/pictureSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/pictureHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Picture"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pictureMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear_layout_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <!--Stciker-->
+                <RelativeLayout
+                    android:id="@+id/stickerSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_color">
+
+                    <TextView
+                        android:id="@+id/stickerHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sticker"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/stickerMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="More..."
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear_layout_sticker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_sticker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/recyclerview_height">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <!--Other Link-->
+                <RelativeLayout
+                    android:id="@+id/footerSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a7a3a3">
+
+                    <TextView
+                        android:id="@+id/footer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="OTHER LINKS"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:src="@drawable/buddy"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/bdtube_bl"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/quizplay"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/aamr"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/robi_gc"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/live_games"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/base_color"
+                    android:padding="15dp"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/home"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/help"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/about"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/account"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/base_color"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:background="#fff"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"/>
+
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textSize="15sp"
+                            android:textColor="#fff"
+                            android:text="ClubZ © 2017.All Rights Reserved."
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <!-- The drawer is given a fixed width in dp and extends the full height of
+         the container. -->
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:name="com.vumobile.clubzed.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/drawer_main" />
+
+</android.support.v4.widget.DrawerLayout>
+
+
+

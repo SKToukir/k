@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vumobile.clubzed">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <permission
+        android:name="com.vumobile.clubzed.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!--
+        <permission android:name="com.javatechig.gridviewexample.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.vumobile.clubzed.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ClubZ"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="JW_LICENSE_KEY"
+            android:value="N8Gxxz5P8gYIO/qrpS9LrsPgHy/OxxpMhyXjzQ==" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Picture_Sticker_Related.PictureGridViewActivity"
+            android:label="ClubZ"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Picture_Sticker_Related.PictureDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".VideoRelated.VideoItemListActivity"
+            android:label="Video"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SongRelated.SongItemListActivity"
+            android:label="Song"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SongRelated.PlaySongActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.GameItemListActivity"
+            android:label="Game"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".VideoRelated.VideoPreViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerPreview"
+            android:screenOrientation="portrait"
+            android:theme="@style/ToolBarTheme" />
+
+        <service android:name=".util.DownloadService" />
+
+        <activity
+            android:name=".util.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Picture_Sticker_Related.StickerGridViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.Action_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.Arcade_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.Sport_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.Cards_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.Racing_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.GameOfTheWeek"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".GameRelated.Puzzle_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".SongRelated.BanglaTopHits" />
+        <activity android:name=".SongRelated.BollyWoodTopHits" />
+        <activity android:name=".SongRelated.MusicOfTheWeek" />
+        <activity android:name=".SongRelated.EnglishTopHits" />
+        <activity android:name=".VideoRelated.Video_BanglaTopHits" />
+        <activity android:name=".VideoRelated.Video_BollyTopHits" />
+        <activity android:name=".VideoRelated.Video_EnglishTopHits" />
+        <activity android:name=".VideoRelated.Video_OfTheWeek" />
+        <activity android:name=".VideoRelated.Video_FullVideo" />
+        <activity android:name=".VideoRelated.Video_Movie_Clips" />
+        <activity android:name=".VideoRelated.Video_Movie_Trailer" />
+        <activity android:name=".VideoRelated.Video_Movie_Review" />
+        <activity android:name=".Picture_Sticker_Related.Pic_Bangla_Celebrity" />
+        <activity android:name=".Picture_Sticker_Related.Pic_Bolly_Celebrity" />
+        <activity android:name=".Picture_Sticker_Related.Pic_cool" />
+        <activity android:name=".Picture_Sticker_Related.Pic_oftheWeek" />
+        <activity android:name=".Picture_Sticker_Related.Pic_Hoolywood_Celebrity" />
+        <activity android:name=".Picture_Sticker_Related.Pic_Love" />
+        <activity android:name=".Picture_Sticker_Related.Pic_Speacial_Events" />
+        <activity android:name=".util.HelpActivity" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_bangla" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_cricketbisshoCup" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_Eid" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_Events" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_funny" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_islamic" />
+        <activity android:name=".Picture_Sticker_Related.Sticker_love" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.vumobile.clubzed" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <activity android:name=".VideoRelated.Video_CelebrityInterview" />
+        <activity
+            android:name=".VideoRelated.BollywoodGossip"
+            android:label="@string/title_activity_bollywood_gossip" />
+
+        <receiver android:name=".Notification.MyReceiver">
+            <intent-filter>
+                <action android:name="YouWillNeverKillMe" />
+
+                <intent-filter>
+                    <action android:name="restartApps" />
+                </intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Notification.NetworkedService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".VideoRelated.VideoCategoryActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.FullVideoGridviewActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.DramaGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.VideoMoreActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".SongRelated.SongCategoryActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".GameRelated.GameCategoryActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.PictureCategoryActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerCategoryActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.BollytopGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.EnglishTopGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.BanglaTopGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.DhaliwoodGossipGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.MovieClipsGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.MovieTrailerGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.MovieReviewGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.CelebratyNewsGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.HollyGossipGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".SongRelated.BanglaTopSongGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".SongRelated.EnglishTopHitGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".SongRelated.EnglishTopSongGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".GameRelated.ActionGmaeGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".GameRelated.SportsGameGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".GameRelated.BrainPuzzleGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".GameRelated.RacingGameGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".GameRelated.ArcadeGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.PicBollyCeleGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.PicHollyCeleGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.BDCeleGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.SpecialEventGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.CoolGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.LoveGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerBanglaGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerCricBissoGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerAnimateGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerEidGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.EventGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.FunnyGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.IslamicGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".Picture_Sticker_Related.StickerLoveGridAcitvity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.LifeStyleGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".MyDownLoadsActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity android:name=".util.FAQActivity" />
+        <activity
+            android:name=".VideoRelated.HDGridVideoActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.HDCategoryActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.BMGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.BNGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.BTGridActivity"
+            android:theme="@style/ToolBarTheme" />
+        <activity
+            android:name=".VideoRelated.ShortFilmGridActivity"
+            android:theme="@style/ToolBarTheme"></activity>
+    </application>
+
+</manifest>

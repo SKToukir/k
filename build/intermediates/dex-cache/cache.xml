@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_252cdbee8a4bf6fff67f1b1089a95a875ef182f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_6e4e209a21bd3926300998dbff36579be1719e5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_82f40a1c374eb9831954bbbc551a08830140cdcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\glide-3.7.0_a14edfeda83aa13296e6e017bd5894d3591b502b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_78d30426a73bab1abaf8d26308d90a32a65e7b01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\ksoap2-android-assembly-2.5.8-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d6e6d14301616c866b7eff210ece6579299417ec">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.5.8-jar-with-dependencies_9127aec2a63447725b247570ce510027a9557e08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_86535641707c33ff260c448ad968c208c22294fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-9.8.0_fbbfe4d3e909d0e4e3cab2fd5ee3f9d2da8946a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_449e24c90657ff8951b3db52f0448c077c239f6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.longtailvideo.jwplayer\jwplayer-core\2.7.7+26\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="b194dfbffa198fed604941a5f4cceb4f2750874e">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.longtailvideo.jwplayer-jwplayer-core-2.7.7+26_78823a1d42847c19375239ee9e5b891295e45d8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-9.8.0_088117e01fbf15214e4808707a78e42026d12e22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_342f2f031b6df2ccec36e3d7398e623edb91165d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\gcm.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\gcm_a29e5d6f42a43f06671b1ff8d2178c377c66e629.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.0_b5ac2f63cc56c296dd90cbb7b792cfdcabd63229.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\volley_0fb9bb8bc3b736d56c51ed6df7e93074f0169d6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_d8e559eeaeb2242ebd180c0653fbf25dba828eda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\ClubZ-1-54\pullToRefreshLibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b6226cc54a0a4659e42aaac032e1c2e6eed788ba">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\ClubZ-1-54-pullToRefreshLibrary-unspecified_6ec96591686d2801ed53c0af969687e3a136bc67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\ClubZ-1-54\pullToRefreshLibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="b6226cc54a0a4659e42aaac032e1c2e6eed788ba">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\ClubZ-1-54-pullToRefreshLibrary-unspecified_6ec96591686d2801ed53c0af969687e3a136bc67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_6e4e209a21bd3926300998dbff36579be1719e5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_78d30426a73bab1abaf8d26308d90a32a65e7b01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\vitamio.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="811855581ea3c79bd73aecb2e0d143b9474b8f60">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\vitamio_e3a62119c754f1641e0a2e57e2330ce77122540d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\volley_0fb9bb8bc3b736d56c51ed6df7e93074f0169d6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\glide-3.7.0_a14edfeda83aa13296e6e017bd5894d3591b502b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.8.0_7df518041ecee665e6d9b35c8c21724b7142be7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_449e24c90657ff8951b3db52f0448c077c239f6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_40e2c8d0a060b1cde7407eb73a214c1638535663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.8.0_c0b933972904cdf5990caad6f10dbe6f7b68add5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_86535641707c33ff260c448ad968c208c22294fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.8.0_77c1d52732406a4c8131c617b6cd98506b8f86ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\gcm.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\gcm_a29e5d6f42a43f06671b1ff8d2178c377c66e629.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.daimajia.slider-library-1.1.5_9e7d2d194320ef7dbca8699e3e04826c70e119cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\ksoap2-android-assembly-2.5.8-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="d6e6d14301616c866b7eff210ece6579299417ec">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.5.8-jar-with-dependencies_9127aec2a63447725b247570ce510027a9557e08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\android-query-full.0.26.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="5ab405d9f4eaf5ddd615967cd35650657b758d40">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\android-query-full.0.26.8_c54ab9915db4bb0c7fd4e109693dd22febb2df1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.daimajia.slider-library-1.1.5_9e7d2d194320ef7dbca8699e3e04826c70e119cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\library-2.4.0_3fd4c420302a0bb16d297dc93b5e899310c7940a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-9.8.0_ef980bc16526ece76b92320e3749fd5f3eb724d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\library-2.4.0_3fd4c420302a0bb16d297dc93b5e899310c7940a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\android-query-full.0.26.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="5ab405d9f4eaf5ddd615967cd35650657b758d40">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\android-query-full.0.26.8_c54ab9915db4bb0c7fd4e109693dd22febb2df1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_18617938336bdde22ec76e745f671b9479edee9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="f7a9468c473a9a6f046eb735abe06a08d8edac5f">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.daimajia.androidanimations-library-1.0.3_1516c71583d1dbe4dd46be43b909407ec5f7daac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.longtailvideo.jwplayer\jwplayer-common\2.7.7+26\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="b66edbb8f501df6fb162318b9c52175430d72d82">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.longtailvideo.jwplayer-jwplayer-common-2.7.7+26_38c2958080a035ea228a26400b850947e02bf3ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_40e2c8d0a060b1cde7407eb73a214c1638535663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.google.ads.interactivemedia.v3\interactivemedia\3.5.2\21246e1a6815dc499443d46f9f5dbe954fd2b746\interactivemedia-3.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="21246e1a6815dc499443d46f9f5dbe954fd2b746">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\interactivemedia-3.5.2_530713b313ded1d57fdee62ae3d3417c82210f8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f7a9468c473a9a6f046eb735abe06a08d8edac5f">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.daimajia.androidanimations-library-1.0.3_1516c71583d1dbe4dd46be43b909407ec5f7daac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-9.8.0_3dec1c9162f7026d6e198d791db4cd9ce3c19ad5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_7dc26b3202a956ecbb2cd7e914870b13dd73aa9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_6852613d464ef45de62f1a8cccadd2b89f8142cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_6852613d464ef45de62f1a8cccadd2b89f8142cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_7dc26b3202a956ecbb2cd7e914870b13dd73aa9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\libs\vitamio.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="811855581ea3c79bd73aecb2e0d143b9474b8f60">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\vitamio_e3a62119c754f1641e0a2e57e2330ce77122540d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_252cdbee8a4bf6fff67f1b1089a95a875ef182f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_82f40a1c374eb9831954bbbc551a08830140cdcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\exploded-aar\com.longtailvideo.jwplayer\jwplayer-ima\2.7.7+26\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.0"
+        sha1="c8002c4f52ea6c6c4f3984c377b37c0410cc5905">
+        <dex dex="C:\Users\it-6\Desktop\Project\Buddy-26-7-2017\ClubZ-1-54\app\build\intermediates\pre-dexed\debug\com.longtailvideo.jwplayer-jwplayer-ima-2.7.7+26_5b761161135e2bbc04f0ab3913489b6eb58a3504.jar" />
+    </item>
+
+</items>

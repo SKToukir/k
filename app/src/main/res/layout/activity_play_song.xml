@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_background"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:background="#000"
+        android:id="@+id/music_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+        <TextView
+            android:id="@+id/songPreviewTitle"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:descendantFocusability="blocksDescendants">
+
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/songPreviewImage"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="#000"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playandPauseButton"
+                android:layout_gravity="center"
+                android:src="@drawable/img_btn_pause"
+                android:background="#00000000"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:textColor="#f90606"
+                android:id="@+id/durationText"
+                android:layout_gravity="bottom"/>
+
+
+        </FrameLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_centerVertical="true"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollViewSong"
+        android:layout_below="@id/music_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both">
+
+        <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent">-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pic_detail_upperLayout">
+
+            <!--<ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/picDetailBackButton"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/backarrow" />-->
+
+
+
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/video_preview_bottomlayout"
+                android:background="#fff">
+
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/imageViews"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/chokh"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:textStyle="normal"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/txtViewsCount"
+                    android:textColor="#000"
+                    android:text="111"
+                    android:layout_toRightOf="@+id/imageViews"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/download_button"
+                    android:id="@+id/songDownloadTextView"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:text="455"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtlikeCountMusic"
+                    android:layout_alignBottom="@+id/btnLike"
+                    android:layout_marginRight="-5dp"
+                    android:layout_toLeftOf="@+id/btnLike"
+                    android:layout_toStartOf="@+id/btnLike" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:onClick="btnLikeMusic"
+                    android:background="@drawable/button_focus"
+                    android:text=""
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnLike"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:id="@+id/videoSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_color">
+
+                <TextView
+                    android:id="@+id/videoeHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Related Content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_vdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_relative_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                card_view:cardCornerRadius="4dp">
+
+                <Button
+                    android:onClick="btnMoreMusic"
+                    android:id="@+id/btnMoreMusic"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="Load More>>"
+                    android:background="@color/base_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vumobile.clubzed.VideoRelated.VideoMoreActivity">
+
+    <include
+        android:id="@+id/tool_bar_vdo_more"
+        layout="@layout/tool_bar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar_vdo_more"
+        android:layout_marginTop="2dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--Bangla Top-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/banglaTopSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/banglaTopHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="বাংলা টপ"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/banglatopMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_bangla_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_bangla_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Life style-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/videoLifeStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/LifeStyleHeader"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:text="লাইফ স্টাইল"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/LifeStyleMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_life_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_life_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Bollytop-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/videoSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/bolytopHeader"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:text="বলিউড টপ হিটস"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/bolytopMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_vdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_boly_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Dhaliwood Hits-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/dhaliwoodSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/dhaliwoodHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="ঢালিউড গসিপ"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/dhaliwoodMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_dhaliwood_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_dhaliwood_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Celebrary News-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/celebratyNewsSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/celebratyNewsHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="সেলিব্রিটি নিউজ"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/celebratyNewsMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_celebraty_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_celebraty_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!--English Top-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/englishTopSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/englishTopHeader"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:text="ইংলিশ টপ হিটস"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/englishTopMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_eng_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_eng_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <!--Hollywood gossip-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/hollywoodGossipSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/hollywoodGossipHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="হলিউড গসিপ"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/hollywoodGossipMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_hollywood_gossip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_hollywood_gossip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!--Movie Review-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/movieRiviewSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/movieReviewHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="মুভি রিভিউ"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/movieReviewMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_movieReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_movieReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Movie Clips-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/movieClipsSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="@dimen/back_header_width"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/movieclipsHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="মুভি ক্লিপ্স"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/movieclipsMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_movieclips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_movieclips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <!--Movie trailer-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/movieTrailerSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="@color/base_color">
+
+                    <LinearLayout
+                        android:background="@drawable/backheader"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="left|center"
+                            android:id="@+id/movieTrailerHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="মুভি ট্রেইলার"
+                            android:layout_marginLeft="2dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/more">
+
+                        <TextView
+                            android:id="@+id/movieTrailerMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="আরও..."
+                            android:textColor="#ffffff"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linear_layout_movieTrailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler_view_movieTrailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/recyclerview_height">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/footerSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a7a3a3">
+
+                <TextView
+                    android:id="@+id/footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="আরো এপ্স"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/buddyVdo"
+                        android:src="@drawable/buddy"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bdtubeVdo"
+                        android:src="@drawable/bdtube_bl"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/banglabeatsVdo"
+                        android:src="@drawable/banglabeats"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/amrStckrVdo"
+                        android:src="@drawable/aamr"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ratemeVdo"
+                        android:src="@drawable/rateme"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/base_color"
+                android:padding="15dp"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnHomeVdo"
+                        android:clickable="true"
+                        android:src="@drawable/home"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnHelpSameVdo"
+                        android:clickable="true"
+                        android:src="@drawable/help"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/btnHelpVdo"
+                        android:clickable="true"
+                        android:src="@drawable/about"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/btnDownloadHistoryPageVdo"
+                        android:clickable="true"
+                        android:src="@drawable/account"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/base_color"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:background="#fff"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="15sp"
+                        android:textColor="#fff"
+                        android:text="ClubZ © 2017.All Rights Reserved."
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+          </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

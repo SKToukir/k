@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="9" android:layout_margin="5dp">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/txtContentTitle"
+            android:textColor="#000"
+            android:text="Dark Night Avenger APK 1TK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtSource"
+            android:textColor="#000"
+            android:text="CZ_GGL_AND_APP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtCharged"
+            android:textColor="#000"
+            android:text="48.70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtDownLoadAt"
+            android:textColor="#000"
+            android:text="2/22/2017 4:32:12 PM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
